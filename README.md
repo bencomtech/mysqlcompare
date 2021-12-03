@@ -25,7 +25,7 @@ mysqlcompare init
 ```
 
 a `connections.json` file will be created , specifying a source and target connection and an sqlfile to store the sql statements in.
-If you connect through an ssh connection you specify `user@host:port` in the ssh field of the json.
+If you connect through an ssh connection you specify `user@host:port` in the ssh field of the json.  Your password will be prompted, either for you user or your ssh key.
 
 ## Compare
 
