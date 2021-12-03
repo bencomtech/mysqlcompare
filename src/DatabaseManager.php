@@ -17,7 +17,7 @@ class DatabaseManager
     public function getSchemaManager($connectionName,)
     {
         $connection = $this->getConnection($connectionName);
-        render('<div class="p-1 ml-1 bg-green-800 text-white">Fetching ' . $connectionName . ' schema</div>');
+        render('<div class="p-1 ml-1 bg-green-800 text-white">Fetching ' . $connectionName . ' schema 👉 '.$connection->getParams()['dbname'].'</div>');
         render('<br>');
         return $connection->getSchemaManager();
     }
@@ -47,7 +47,7 @@ class DatabaseManager
 
     public function compare(): self
     {
-        render('<div class="m-1 p-4 font-bold bg-green-800">mysqlcompare</div>');
+        render('<div class="m-1 p-4 font-bold bg-green-800">👩‍💻 mysqlcompare 👩‍💻</div>');
         $sourceSchema = $this->getSchema('source');
         $targetSchema = $this->getSchema('target');
         render('<div class="p-1 ml-1 bg-yellow-800 text-white">Getting difference</div>');
@@ -71,7 +71,7 @@ class DatabaseManager
     {
         $filename = config('sqlfile');
         render('<br>');
-        render('<div class="p-1 ml-1 bg-green-800 text-white">Writing sql statements to ' . $filename . ' 🥳</div>');
+        render('<div class="p-1 ml-1 bg-green-800 text-white">Writing '.$this->getStatements()->count().' sql statements to ' . $filename . ' 🥳</div>');
         render('<br>');
         $file = fopen($filename, "w") or die("Unable to open file!");
         fwrite($file, $this->getSql());
