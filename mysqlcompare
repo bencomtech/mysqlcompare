@@ -8,6 +8,7 @@ function config($key)
 }
 
 use LLoadout\MysqlCompare\Compare;
+use LLoadout\MysqlCompare\InitCommand;
 use LLoadout\MysqlCompare\MysqlCompareApplication;
 use LLoadout\MysqlCompare\UpdateCommand;
 
@@ -23,4 +24,5 @@ if (file_exists(__DIR__ . '/../../autoload.php')) {
 $app = new MysqlCompareApplication('<fg=green>Mysqlcompare</> version', "0.0", get_defined_vars()['argv']);
 $app->add(new UpdateCommand());
 $app->add(new Compare());
+$app->add(new InitCommand());
 $app->run();
