@@ -1,7 +1,12 @@
+![Downloads](https://img.shields.io/packagist/dt/lloadout/mysqlcompare.svg?style=flat-square)
+
+<p align="center">
+    <img src="https://github.com/LLoadout/assets/blob/master/LLoadout_mysqlcompare.png" width="500" title="LLoadout logo">
+</p>
+
 # mysqlcompare
 a command line tool to compare two mysql databases
 
-![Downloads](https://img.shields.io/packagist/dt/lloadout/mysqlcompare.svg?style=flat-square)
 
 ## Requirements
 
