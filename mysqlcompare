@@ -1,0 +1,26 @@
+#!/usr/bin/env php
+<?php
+
+function config($key)
+{
+    $connections = json_decode(file_get_contents('connections.json'), true);
+    return $connections[$key];
+}
+
+use LLoadout\MysqlCompare\Compare;
+use LLoadout\MysqlCompare\MysqlCompareApplication;
+use LLoadout\MysqlCompare\UpdateCommand;
+
+if (file_exists(__DIR__ . '/../../autoload.php')) {
+    require __DIR__ . '/../../autoload.php';
+} else {
+    require __DIR__ . '/vendor/autoload.php';
+}
+
+/**
+ * Start the console application.
+ */
+$app = new MysqlCompareApplication('<fg=green>Mysqlcompare</> version', "0.0", get_defined_vars()['argv']);
+$app->add(new UpdateCommand());
+$app->add(new Compare());
+$app->run();
