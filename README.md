@@ -9,7 +9,7 @@ mysqlcompare is a command line tool to compare two database schema's and retreiv
 
 ## Installation
 
-````shell
+```shell
 composer global require lloadout/mysqlcompare
 ```
 
