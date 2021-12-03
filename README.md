@@ -5,10 +5,6 @@
 </p>
 
 # mysqlcompare
-a command line tool to compare two mysql databases
-
-
-## Requirements
 
 mysqlcompare is a command line tool to compare two database schema's and retreive the difference in an sql file.
 
