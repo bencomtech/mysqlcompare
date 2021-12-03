@@ -27,8 +27,7 @@ class DatabaseManager
         if (!isset($this->{$connectionName . "Connection"})) {
 
             $connection = config($connectionName);
-            if (isset($connection['ssh'])) {
-
+            if (isset($connection['ssh']) && !empty($connection['ssh'])) {
                 $ports = ['source' => 3333, 'target' => 3334];
                 render('<div class="p-1 ml-1 bg-green-800 text-white">Establishing ' . $connectionName . ' connection over ssh 🔐</div>');
                 $connection['port'] = $ports[$connectionName];
