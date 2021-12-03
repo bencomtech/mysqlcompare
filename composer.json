@@ -12,7 +12,7 @@
     "symfony/console": "^5.3",
     "symfony/process": "^5.3",
     "symfony/finder": "^5.3",
-    "nunomaduro/termwind": "dev-master",
+    "nunomaduro/termwind": "^1.0",
     "doctrine/dbal": "^3.1"
   },
   "require-dev": {
