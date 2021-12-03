@@ -1,5 +1,6 @@
 # mysqlcompare
-a command line tool to compare two mysql databases 
+a command line tool to compare two mysql databases
+
 ![Downloads](https://img.shields.io/packagist/dt/lloadout/mysqlcompare.svg?style=flat-square)
 
 ## Requirements
