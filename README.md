@@ -4,9 +4,13 @@
     <img src="https://github.com/LLoadout/assets/blob/master/LLoadout_mysqlcompare.png" width="500" title="LLoadout logo">
 </p>
 
+# 🏗 👀 I'm working on a companion app for this package 👀 🏗 
+
 # mysqlcompare
 
 mysqlcompare is a command line tool to compare two database schema's and retreive the difference in an sql file.
+
+
 
 ## Installation
 
