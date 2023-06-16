@@ -1,13 +1,12 @@
-![Downloads](https://img.shields.io/packagist/dt/lloadout/mysqlcompare.svg?style=flat-square)
-
 <p align="center">
     <img src="https://github.com/LLoadout/assets/blob/master/LLoadout_mysqlcompare.png" width="500" title="LLoadout logo">
 </p>
 
+![Downloads](https://img.shields.io/packagist/dt/lloadout/mysqlcompare.svg?style=flat-square)
+
 # mysqlcompare
 
 mysqlcompare is a command line tool to compare two database schema's and retreive the difference in an sql file.
-
 
 
 ## Installation
